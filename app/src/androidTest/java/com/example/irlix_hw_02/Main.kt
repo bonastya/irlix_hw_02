@@ -75,7 +75,6 @@ fun Shop.example(): Int? = customers.map { it.orders }.flatten().find { it.id ==
 
 //Преобразовать список клиентов в сет
 fun Shop.getSetOfCustomers(): Set<Customer> {
-    println("qqq"+HashSet(this.customers).toString())
     return HashSet(this.customers)
 }
 
